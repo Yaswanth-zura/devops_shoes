@@ -1,0 +1,16 @@
+services:
+
+  shoes:
+    image: 663566123253.dkr.ecr.ap-south-2.amazonaws.com/shoes:${SHOES_TAG}
+
+    container_name: shoes
+
+    ports:
+      - "1002:1002"
+
+    networks:
+      - micro-net
+
+networks:
+  micro-net:
+    external: true
