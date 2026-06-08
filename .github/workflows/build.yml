@@ -116,4 +116,3 @@ jobs:
             docker compose up -d shoes
 
             docker ps
-    
